@@ -44,7 +44,7 @@ body {
 
 @media screen and (min-width: 825px) {
     body {
-        background: url(../assets/bg-main-tablet.png)
+        background: url(../assets/bg-main-tablet.png);
     }
 }
 
@@ -113,7 +113,8 @@ body {
 .hero .container .hero__paragraph {
     max-width: 515px;
     font-weight: 400;
-    font-size: 1.65rem
+    font-family: Poppins;
+    font-size: 1.7rem
 }
 
 @media screen and (min-width: 640px) {
