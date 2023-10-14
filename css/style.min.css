@@ -41,7 +41,7 @@ body {
     width: 100%;
     line-height: 1.5;
     color: #000;
-    background: url(../assets/bg-main-mobile.png) left;
+    background: url(../assets/bg-main-mobile.png) center;  /* left */
 }
 
 @media screen and (min-width: 825px) {
@@ -116,7 +116,7 @@ body {
     max-width: 515px;
     font-weight: 400;
     font-family: Poppins;
-    font-size: 1.65rem
+    font-size: 1.6rem
 }
 
 @media screen and (min-width: 640px) {
@@ -138,7 +138,7 @@ body {
 .main .container {
     position: relative;
     border-radius: 1rem;
-    background: rgb(0,0,0,0) url(../assets/ouw.gif) top no-repeat;  /* ../assets/bg-pattern-2.svg */
+    background: rgb(0,0,0,0) url(../assets/front.gif) top no-repeat;  /* ../assets/bg-pattern-2.svg */
     height: 600px;
     margin: 27rem auto 40rem
 } /* 27rem,  47rem */
