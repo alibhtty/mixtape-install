@@ -149,6 +149,9 @@ body {
         opacity: 70%;
         object-fit: cover;
     }
+    .container{
+        padding-top: 4rem;
+    }
     /* .main .container{
         background: rgb(0,0,0,0) url(../assets/led.gif) top no-repeat;
     } */
@@ -279,7 +282,7 @@ body {
     color: #f1f1f1;
     display: -ms-grid;
     display: grid;
-    row-gap: 2.5rem;
+    row-gap: 1rem;
     padding-bottom: 2.5rem;
 }
 
