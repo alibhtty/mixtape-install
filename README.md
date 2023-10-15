@@ -4,7 +4,7 @@
 
 
 ## Descripción
-Mini reproductor, basado en React JS y Vite.<br>
+Mini reproductor, basado en React JS y Vite. #0648ff<br>
 [(Live Demo)](https://alibhtty.com/start/)
 
 

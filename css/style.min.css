@@ -41,18 +41,19 @@ body {
     width: 100%;
     line-height: 1.5;
     color: #000;
-    background: url(../assets/bg-main-mobile.png) center;  /* left */
+    background: url(../assets/bg-main-mobile.png) no-repeat;  /* left */
 }
 
 @media screen and (min-width: 825px) {
     body {
-        background: url(../assets/bg-main-tablet.png);
+        background: url(../assets/bg-main-tablet.png) no-repeat;
     }
 }
 
 @media screen and (min-width: 1000px) {
     body {
-        background: url(../assets/bg-main-desktop.png)
+        background: url(../assets/bg-main-desktop.png) no-repeat; /* bg-main-desktop.png */
+        /* background-size: 100%; */
     }
 }
 
@@ -116,7 +117,7 @@ body {
     max-width: 515px;
     font-weight: 400;
     font-family: Poppins;
-    font-size: 1.6rem
+    font-size: 16px; /* 1.6rem */
 }
 
 @media screen and (min-width: 640px) {
@@ -138,14 +139,19 @@ body {
 .main .container {
     position: relative;
     border-radius: 1rem;
-    background: rgb(0,0,0,0) url(../assets/front.gif) top no-repeat;  /* ../assets/bg-pattern-2.svg */
+    background: none;
+    /* background: rgb(0,0,0,0) url(../assets/led.gif) top no-repeat; */  /* ../assets/bg-pattern-2.svg */
     height: 600px;
-    margin: 27rem auto 40rem
-} /* 27rem,  47rem */
+    margin: 27rem auto 40rem;
+}
 @media (orientation: portrait) {
-    .main .container{
-        background: none;
+    video{
+        opacity: 70%;
+        object-fit: cover;
     }
+    /* .main .container{
+        background: rgb(0,0,0,0) url(../assets/led.gif) top no-repeat;
+    } */
     .footer-name{
         /* text-align: center; */
         margin-left: 20%;
@@ -389,26 +395,26 @@ body {
 
 
 .led {
-    width: 7px;
-    height: 7px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
-    margin: 16px 15px;
+    margin: 15px 15px;
   }
   
   .led-online {
-    background-color: #066EFF;
-    box-shadow: 0px 0px 4px 4px #066EFF;
+    background-color: #30ff24; /* 066EFF */
+    box-shadow: 0px 0px 10px 1.5px #30ff24; /* 1b7aff */
   }
 
   .parpadea {
   
     animation-name: parpadeo;
-    animation-duration: 3.5s;
+    animation-duration: 3s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
   
     -webkit-animation-name:parpadeo;
-    -webkit-animation-duration: 3.5s;
+    -webkit-animation-duration: 3s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
   }
@@ -429,6 +435,30 @@ body {
     0% { opacity: 1.0; }
      50% { opacity: 0.0; }
     100% { opacity: 1.0; }
+  }
+
+
+
+  video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  
+  }
+  .video-wrapper {
+    border: 0px solid #000;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
 /* NO SELECCIONABLE */
