@@ -115,6 +115,7 @@ body {
 
 .hero .container .hero__paragraph {
     max-width: 515px;
+    max-width: 40ch;
     font-weight: 400;
     font-family: Poppins;
     font-size: 16px; /* 1.6rem */
@@ -122,7 +123,7 @@ body {
 
 @media screen and (min-width: 640px) {
     .hero .container .hero__paragraph {
-        max-width: 680px
+        max-width: 680px;
     }
 }
 
@@ -132,7 +133,8 @@ body {
     }
 
     .hero .container .hero__paragraph {
-        font-size: 1.75rem
+        font-size: 1.75rem;
+        max-width: 55ch;
     }
 }
 
@@ -189,7 +191,7 @@ body {
     background-color: rgb(52, 64, 136, .5);
     backdrop-filter: blur(20px);
     color: #fff;
-    border-radius: 1rem;
+    border-radius: 2rem;
     position: absolute;
     padding: 3rem;
     display: -webkit-box;
@@ -262,20 +264,24 @@ body {
 }
 
 .main .container .main__card .card__btn--ios {
-    background-color: #121118
+    background-color: #121118;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .main .container .main__card .card__btn--ios:hover {
-    background-color: #312f3d
+    background-color: #2100d9; /* 312f3d */
 }
 
 .main .container .main__card .card__btn--android {
     background-color: #fbfaf8;
-    color: #1c1b22
+    color: #1c1b22;
+    text-decoration: none;
 }
 
 .main .container .main__card .card__btn--android:hover {
-    background-color: #ddd
+    background-color: #e3f4ff; /* #ddd */
+    color: #1c1b22;
 }
 
 .footer .container {
